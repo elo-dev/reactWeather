@@ -4,22 +4,22 @@
   padding: 20px;
   max-width: 400px;
   width: 100%;
-  background: $theme-lite-background;
-  box-shadow: $box-shadow;
+  background: var(#{--components-background-default});
+  box-shadow: var(#{--card-shadow-default});
   border-radius: $border-radius;
   .top_block {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
     .wrapper {
       .temp {
-          font-size: 96px;
-          color: $primary-color;
+        font-size: 96px;
+        color: $primary-color;
       }
       .current_day {
-          font-size: 40px;
-          color: $lite-color;
+        font-size: 40px;
+        color: var(#{--text-color-default});
       }
     }
     svg {
@@ -27,11 +27,11 @@
       height: 119px;
     }
   }
-  .bottom_block{
-      .time,
-      .city{
-        color: $base-color;
-        font-size: 25px;
-      }
+  .bottom_block {
+    .time,
+    .city {
+      color: $base-color;
+      font-size: 25px;
+    }
   }
 }

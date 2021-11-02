@@ -8,7 +8,7 @@ import './styles/index.scss'
 const App = () => {
   return (
     <div className='container'>
-      <Popup />
+      {/* <Popup /> */}
       <div className="App">
         <Header />
         <Switch>

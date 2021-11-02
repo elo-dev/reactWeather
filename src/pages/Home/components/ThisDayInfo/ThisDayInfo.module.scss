@@ -5,8 +5,8 @@
   padding: 40px;
   width: 100%;
   max-width: 750px;
-  background: $theme-lite-background;
-  box-shadow: $box-shadow;
+  background: var(#{--components-background-default});
+  box-shadow: var(#{--card-shadow-default});
   border-radius: $border-radius;
   .items {
     .item {
@@ -37,7 +37,7 @@
         color: $base-color;
       }
       .indicator_value{
-        color: $lite-color;
+        color: var(#{--text-color-default});
       }
     }
   }
