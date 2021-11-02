@@ -1,0 +1,37 @@
+@import '../../../../styles/variables.scss';
+
+.this_day {
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  background: $theme-lite-background;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  .top_block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    .wrapper {
+      .temp {
+          font-size: 96px;
+          color: $primary-color;
+      }
+      .current_day {
+          font-size: 40px;
+          color: $lite-color;
+      }
+    }
+    svg {
+      width: 119px;
+      height: 119px;
+    }
+  }
+  .bottom_block{
+      .time,
+      .city{
+        color: $base-color;
+        font-size: 25px;
+      }
+  }
+}
