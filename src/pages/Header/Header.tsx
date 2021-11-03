@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import Select from 'react-select'
 import { GlobalSvgSelector } from '../../assets/icons/GlobalSvgSelector'
 import { Theme } from '../../context/ThemeContext'
@@ -9,7 +9,7 @@ interface Props {}
 
 export const Header = (props: Props) => {
   const { theme, changeTheme } = useTheme()
-
+  
   const options = [
     { value: 'chocolate', label: 'Chocolate' },
     { value: 'strawberry', label: 'Strawberry' },
